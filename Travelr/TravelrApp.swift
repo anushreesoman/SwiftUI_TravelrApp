@@ -11,7 +11,9 @@ import SwiftUI
 struct TravelrApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ContentView(location: Locations().primaryLocation)
+            }
         }
     }
 }

@@ -13,6 +13,8 @@
 		B84E158229E9A52A00752989 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B84E158129E9A52A00752989 /* Preview Assets.xcassets */; };
 		B84E158A29E9A57500752989 /* tips.json in Resources */ = {isa = PBXBuildFile; fileRef = B84E158829E9A57500752989 /* tips.json */; };
 		B84E158B29E9A57500752989 /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = B84E158929E9A57500752989 /* locations.json */; };
+		B84E158D29E9A98600752989 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84E158C29E9A98600752989 /* Location.swift */; };
+		B84E158F29E9B00500752989 /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84E158E29E9B00500752989 /* Locations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		B84E158129E9A52A00752989 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B84E158829E9A57500752989 /* tips.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tips.json; sourceTree = "<group>"; };
 		B84E158929E9A57500752989 /* locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
+		B84E158C29E9A98600752989 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		B84E158E29E9B00500752989 /* Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 			children = (
 				B84E157A29E9A52600752989 /* TravelrApp.swift */,
 				B84E157C29E9A52600752989 /* ContentView.swift */,
+				B84E158E29E9B00500752989 /* Locations.swift */,
+				B84E158C29E9A98600752989 /* Location.swift */,
 				B84E157E29E9A52A00752989 /* Assets.xcassets */,
 				B84E158929E9A57500752989 /* locations.json */,
 				B84E158829E9A57500752989 /* tips.json */,
@@ -146,6 +152,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B84E157D29E9A52600752989 /* ContentView.swift in Sources */,
+				B84E158D29E9A98600752989 /* Location.swift in Sources */,
+				B84E158F29E9B00500752989 /* Locations.swift in Sources */,
 				B84E157B29E9A52600752989 /* TravelrApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
