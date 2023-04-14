@@ -11,8 +11,14 @@ import SwiftUI
 struct TravelrApp: App {
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                ContentView(location: Locations().primaryLocation)
+            TabView {
+                NavigationView {
+                    ContentView(location: Locations().primaryLocation)
+                }
+                .tabItem {
+                    Image(systemName: "airplane.circle.fill")
+                    Text("Discover")
+                }
             }
         }
     }
