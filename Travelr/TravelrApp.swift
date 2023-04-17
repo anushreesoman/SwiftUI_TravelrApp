@@ -9,17 +9,35 @@ import SwiftUI
 
 @main
 struct TravelrApp: App {
+    @StateObject private var locations = Locations()
     var body: some Scene {
         WindowGroup {
             TabView {
                 NavigationView {
-                    ContentView(location: Locations().primaryLocation)
+                    ContentView(location: locations.primaryLocation)
                 }
                 .tabItem {
                     Image(systemName: "airplane.circle.fill")
                     Text("Discover")
                 }
+                
+                NavigationView {
+                    MapView()
+                }
+                .tabItem {
+                    Image(systemName: "map.fill")
+                    Text("Map")
+                }
+                
+                NavigationView {
+                    TipsListView()
+                }
+                .tabItem {
+                    Image(systemName: "quote.bubble")
+                    Text("Tips")
+                }
             }
+            .environmentObject(locations)
         }
     }
 }
