@@ -28,6 +28,14 @@ struct TravelrApp: App {
                     Image(systemName: "map.fill")
                     Text("Map")
                 }
+                
+                NavigationView {
+                    TipsListView()
+                }
+                .tabItem {
+                    Image(systemName: "quote.bubble")
+                    Text("Tips")
+                }
             }
             .environmentObject(locations)
         }
