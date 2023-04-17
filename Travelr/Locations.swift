@@ -8,15 +8,15 @@
 import Foundation
 
 class Locations: ObservableObject {
-    let locations: [Location]
+    let allLocations: [Location]
     
     var primaryLocation: Location {
-        locations[0]
+        allLocations[0]
     }
     
     init() {
         let url = Bundle.main.url(forResource: "locations", withExtension: "json")!
         let data = try! Data(contentsOf: url)
-        locations = try! JSONDecoder().decode([Location].self, from: data)
+        allLocations = try! JSONDecoder().decode([Location].self, from: data)
     }
 }
